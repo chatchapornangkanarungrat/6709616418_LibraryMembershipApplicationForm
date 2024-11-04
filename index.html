@@ -10,6 +10,7 @@
 <body>
 <form>
     <legend> แบบฟอร์มสำหรับการสมัครสมาชิกห้องสมุด </legend>
+    <h1> * จำเป็นต้องกรอก</h1>
         <label for="Name"> ชื่อ - นามสกุล <span>*</span></label>
         <label for="Name"> (ภาษาไทย) :</label>
         <input type="text" id="name" name="THname" >
@@ -25,7 +26,7 @@
             <option value="other">อื่นๆ</option>
         </select>
 
-        <label for="sid">รหัสนักศึกษา : <span>*</span> </label>
+        <label for="sid">รหัสนักศึกษา SID (10 หลัก) : <span>*</span> </label>
         <input type="text" name="sid" required>
 
         <label for="faculty"> คณะ : <span>*</span></label>
@@ -58,13 +59,13 @@
         <label>วัน/เดือน/ปี เกิด : <span>*</span></label>
         <input type="date" id="date" name="date" required>
 
-        <label for="interest">ประเภทของหนังสือที่สนใจ:</label>
+        <label for="interest">ประเภทของหนังสือที่สนใจ :</label>
             <textarea name="book" > </textarea>
 
-        <label for="updates">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ :</label>
+        <label for="updates">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ : <span>*</span></label>
             <div class="radio">
-                <input type="radio" name="updates" value="yes" required> ต้องการ
-                <input type="radio" name="updates" value="no" required> ไม่ต้องการ
+                <input type="radio" name="news" value="yes" required> ต้องการ
+                <input type="radio" name="news" value="no" required> ไม่ต้องการ
             </div>
 
             <button type="submit">Submit</button>
