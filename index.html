@@ -63,13 +63,18 @@
         <label for="interest">ประเภทของหนังสือที่สนใจ :</label>
             <textarea name="book" > </textarea>
 
-        <label for="updates">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ : <span>*</span></label>
+        <label for="news">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ <span>*</span></label>
             <div class="radio">
                 <input type="radio" name="news" value="yes" required> ต้องการ
                 <input type="radio" name="news" value="no" required> ไม่ต้องการ
             </div>
 
-            <button type="submit">Submit</button>
+        <label for="agree"> ท่านได้อ่านและตกลงยินยอมเงื่อนไขในการสมัครสมาชิกห้องสมุด <span>*</span></label>
+            <div class="radio">
+                <input type="radio" name="agree" value="agree" required> ยินยอม
+            </div>
+
+        <button type="submit">Submit</button>
 </form>
 </body>
 
