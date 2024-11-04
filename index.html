@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Application Form</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+<form>
+    <legend> แบบฟอร์มสำหรับการสมัครสมาชิกห้องสมุด </legend>
+        <label for="Name"> ชื่อ - นามสกุล <span>*</span></label>
+        <label for="Name"> (ภาษาไทย) :</label>
+        <input type="text" id="name" name="THname" >
+
+        <label for="Name"> (ภาษาอังกฤษ) : </label>
+        <input type="text" id="name" name="ENname">
+
+        <label for="gender"> เพศ : <span>*</span></label>
+        <select id="gender" name="gender" required>
+            <option value="plsfill">โปรดระบุตัวเลือก</option>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+
+        <label for="sid">รหัสนักศึกษา : <span>*</span> </label>
+        <input type="text" name="sid" required>
+
+        <label for="faculty"> คณะ : <span>*</span></label>
+        <select id="faculty" name="faculty" required>
+            <option value="plsfill">โปรดระบุตัวเลือก</option>
+            <option value="">วิทยาศาสตร์และเทคโนโลยี</option>
+        </select>
+
+        <label for="email">อีเมล (e-mail) : <span>*</span></label>
+            <input type="email" id="email" name="email" required>
+
+        <label>วัน/เดือน/ปี เกิด : <span>*</span></label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="interest">ประเภทของหนังสือที่สนใจ:</label>
+            <textarea name="book" > </textarea>
+
+        <label for="updates">ท่านต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ :</label>
+            <div class="radio">
+                <input type="radio" name="updates" value="yes" required> ต้องการ
+                <input type="radio" name="updates" value="no" required> ไม่ต้องการ
+            </div>
+
+            <button type="submit">Submit</button>
+</form>
+</body>
+
+</html>
